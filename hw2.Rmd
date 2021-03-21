@@ -30,7 +30,7 @@ Remember:
 * You can add other files but do not delete any files
 * Commit your work and push to your private Github repository as explained [here](https://github.com/DSApps-2021/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
 
-This assignment is due: 29/3 23:59
+This assignment is due: 05/4 23:59
 
 ### Packages
 
@@ -140,7 +140,7 @@ Finally, you may be shocked to know that all country columns (all but the first 
 
 A big problem is that `dirty_data` now holds only the data for men. We can't just copy-paste everything, we need a function. Moreover, many of the steps could be united into a single pipe.
 
-Complete the `tidy_up_data()` function, which receives a `.sheet` number and a `.gender` string, and returns the (almost) tidy data for that gender. Uncomment the usage of the function to get the `migration_men` and `migration_women` datasets. Bonus points if you can wrap `clean_country_name()`  inside a function called `clean_country_name_data()` to clean the names of the dataset **inside a pipe**, not as done above:
+Complete the `tidy_up_data()` function, which receives a `.sheet` number and a `.gender` string, and returns the (almost) tidy data for that gender. Uncomment the usage of the function to get the `migration_men` and `migration_women` datasets. Bonus points if you can wrap `clean_country_name()`  inside a function called `clean_country_name_data()` to clean the names of the dataset **inside a pipe**, not as done above. Also notice there is no `country_dest` column, I want you to rename the `country` column.
 
 ```{r}
 # tidy_up_data <- function(.sheet, .gender) {
