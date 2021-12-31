@@ -361,7 +361,7 @@ char_attrs <- c(char_attrs, "vehicles")
 chars <- sw_people %>% map_dfr(get_sw_element_details, char_attrs)
 ```
 
-This error happens because the "vehicles" field is in itself a list of a few vehicles "ID"s, which throws `map_dfr()` off the rails, where we *would* have wanted a list column (column holding lists of varying length of vehicles).
+In previous versions of tidyverse this resulted in an error, because the "vehicles" field is in itself a list of a few vehicles "ID"s, which threw `map_dfr()` off the rails, where we *would* have wanted a list column (column holding lists of varying length of vehicles). In the most recent version it silently un-nests the vehicles from each list into multiple rows, which I think is worse, but it is debatable.
 
 Here we have a few options. I prefer keeping a **named** vector of `chars_attrs` (like a Python dictionary), specifying for each attribute whether a list is expected or not, then choosing what to do with such attribute in another function, `chuck_safest()`:
 
@@ -407,7 +407,7 @@ chars
 
 ### Iterating with `purrr` - what you need to do
 
-##### (60 points)
+##### (50 points)
 
 First, from the `sw_films` list, create a `films` data.frame, holding for each SW film a single row with variables `c("title", "episode_id", "director", "release_date", "characters", "planets", "starships" and "vehicles")`. Notice:
 
@@ -441,6 +441,32 @@ You must use at least one `purrr` mapping function such as `map_dbl()`.
 ```
 
 Finally, I just want you to acknowledge the fact that we didn't use a single for loop. For loops are not necessarily "bad" or "slow" but there are available solutions like `purrr`, that allow you to write more concise, less error-prone code. Make yourself love it, it will pay off.
+
+### Paper questions
+
+##### (10 points)
+
+Read Broman and Woo [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) 2017 paper. It is actually one of The American Statistician journal most viewed papers.
+
+Look at the משקים חקלאיים attached Excel file in the data folder. This is an actual file from the Israeli Central Bureau of Statistics, and reflects write well how files originating from the CBS usually look like.
+
+![](images/meshakim_cbs.png)
+
+Which Broman and Woo principles are violated in this file? Give at least 4 and explain each. You can add a few from your own experience if you like.
+
+```{r}
+# principle 1:
+# explanation
+
+# principle 2:
+# explanation
+
+# principle 3:
+# explanation
+
+# principle 4:
+# explanation
+```
 
 ### Wrap up
 
