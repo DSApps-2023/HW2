@@ -1,5 +1,5 @@
 ---
-title: "DSApps 2021 @ TAU: Assignment 2"
+title: "DSApps 2022 @ TAU: Assignment 2"
 author: "Giora Simchoni"
 date: "`r Sys.Date()`"
 output: 
@@ -19,18 +19,18 @@ Welcome to Assignment 2 in R!
 Remember:
 
 * You can play with the assignment in Playground mode, but:
-* Only your private Github repository assigned to you by the course admin will be cloned and graded (Submission mode, see instructions [here](https://github.com/DSApps-2021/Class_Slides/blob/master/Apps_of_DS_HW.pdf))
+* Only your private Github repository assigned to you by the course admin will be cloned and graded (Submission mode, see instructions [here](https://github.com/DSApps-2022/Class_Slides/blob/master/Apps_of_DS_HW.pdf))
 * Like any other University assignment, your work should remain private
-* You need to `git clone` your private Github repository locally as explained [here](https://github.com/DSApps-2021/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
+* You need to `git clone` your private Github repository locally as explained [here](https://github.com/DSApps-2022/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
 * You need to uncomment the starter code inside the chunk, replace the `### YOUR CODE HERE ###`, run the chunk and see that you're getting the expected result
 * Pay attention to what you're asked to do and the required output
 * For example, using a *different* function than the one you were specifically asked to use, will decrease your score (unless you amaze me)
 * Your notebook should run smoothly from start to end if someone presses in the RStudio toolbar Run --> Restart R and Run All Chunks
 * When you're done knit the entire notebook into a html file, this is the file that would be graded
 * You can add other files but do not delete any files
-* Commit your work and push to your private Github repository as explained [here](https://github.com/DSApps-2021/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
+* Commit your work and push to your private Github repository as explained [here](https://github.com/DSApps-2022/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
 
-This assignment is due: 05/4 23:59
+This assignment is due: TBD
 
 ### Packages
 
@@ -49,11 +49,11 @@ library(repurrrsive)
 
 ##### (40 points)
 
-Go over the [UN Migration Dataset](https://DSApps-2021.github.io/Class_Slides/u1_d03-wranglingB/u1_d03-wranglingB.html#25) we've talked about in class.
+Go over the [UN Migration Dataset](https://DSApps-2022.github.io/Class_Slides/u1_d03-wranglingB/u1_d03-wranglingB.html#25) we've talked about in class.
  
-Open the Excel file in this repo's data folder and see for yourself how untidy an official dataset can get. If you don't have Excel look again at the [screenshot](https://DSApps-2021.github.io/Class_Slides/u1_d03-wranglingB/u1_d03-wranglingB.html#26) from class.
+Open the Excel file in this repo's data folder and see for yourself how untidy an official dataset can get. If you don't have Excel look again at the [screenshot](https://DSApps-2022.github.io/Class_Slides/u1_d03-wranglingB/u1_d03-wranglingB.html#26) from class.
 
-In this part of the assignment you will recreate the steps needed to get to the (almost) tidy `migration` dataset you can find in the [class repo](https://github.com/DSApps-2021/Class_Slides/tree/master/data).
+In this part of the assignment you will recreate the steps needed to get to the (almost) tidy `migration` dataset you can find in the [class repo](https://github.com/DSApps-2022/Class_Slides/tree/master/data).
 
 First read in the 3rd sheet of this Excel file (a.k.a "Table 2. Male migrant stock at mid-year..."), with the [`read_excel()`](https://readxl.tidyverse.org/reference/read_excel.html) function from the `readxl` package:
 
