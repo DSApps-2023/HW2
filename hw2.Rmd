@@ -30,7 +30,7 @@ Remember:
 * You can add other files but do not delete any files
 * Commit your work and push to your private Github repository as explained [here](https://github.com/DSApps-2022/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
 
-This assignment is due: TBD
+This assignment is due: 16/3 23:59
 
 ### Packages
 
@@ -448,7 +448,7 @@ Finally, I just want you to acknowledge the fact that we didn't use a single for
 
 Read Broman and Woo [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) 2017 paper. It is actually one of The American Statistician journal most viewed papers.
 
-Look at the משקים חקלאיים attached Excel file in the data folder. This is an actual file from the Israeli Central Bureau of Statistics, and reflects write well how files originating from the CBS usually look like.
+Look at the משקים חקלאיים attached Excel file in the data folder. This is an actual file from the Israeli Central Bureau of Statistics, and reflects quite well how files originating from the CBS usually look like.
 
 ![](images/meshakim_cbs.png)
 
