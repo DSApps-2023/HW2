@@ -4,7 +4,7 @@
 
 ### Welcome to Assignment 2!
 
-For details on how to run the assignment (Submission mode) see [here](https://github.com/DSApps-2023/Class_Slides/blob/master/Apps_of_DS_HW.pdf) and in the assignment itslef ([hw2.Rmd](hw2.Rmd)).
+For details on how to run the assignment (Submission mode) see [here](https://github.com/DSApps-2023/Class_Slides/blob/master/Apps_of_DS_HW.pdf) and in the assignment itself ([hw2.Rmd](hw2.Rmd)).
 
 In general:
 
