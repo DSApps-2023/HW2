@@ -30,7 +30,7 @@ Remember:
 * You can add other files but do not delete any files
 * Commit your work and push to your private Github repository as explained [here](https://github.com/DSApps-2023/Class_Slides/blob/master/Apps_of_DS_HW.pdf)
 
-This assignment is due: TBD
+This assignment is due: 10/4 23:59
 
 ### Packages
 
@@ -126,8 +126,8 @@ There are different values for missing values as said in class and we are going 
 
 ```{r}
 dirty_data <- dirty_data %>%
-  na_if("-") %>%
-  na_if("..") %>%
+  mutate(across(where(is.character), ~na_if(., "-"))) %>%
+  mutate(across(where(is.character), ~na_if(., ".."))) %>%
   replace(is.na(.), "0")
 ```
 
